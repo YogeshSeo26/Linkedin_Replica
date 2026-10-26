@@ -21,10 +21,10 @@ app.use(userRoutes);
 app.use(express.static("uploads")); // relative path instead of absolute path
 
 const start = async () => {
-    const connectDB = await mongoose.connect("mongodb+srv://yogeshseo26_db_user:5DwfpoJ8NWoU8i8O@linkedinreplica.z81yf0j.mongodb.net/LinkedinReplica?retryWrites=true&w=majority&appName=LinkedinReplica");
+    const connectDB = await mongoose.connect(process.env.MONGODB_URI);
 
-    app.listen(9080, () => {
-        console.log("Server is running on port 9080");
+    app.listen(process.env.PORT || 9080, () => {
+        console.log(`Server is running on port ${process.env.PORT || 9080}`);
     });
 };
 
