@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 16, "column": 0}, "map": {"version":3,"sources":["file:///D:/5%20WebDev_MERN_Full_Stack_Projects/Linkedin_Replica/frontend/src/pages/blog/index.jsx"],"sourcesContent":["\r\nimport React, { Component } from 'react'\r\n\r\nexport default class index extends Component {\r\n  render() {\r\n    return (\r\n      <div>BlogPage</div>\r\n    )\r\n  }\r\n}\r\n"],"names":["index","render"],"mappings":";;;;;AACA;;;AAEe,MAAMA,cAAc,gHAAS;IAC1CC,SAAS;QACP,qBACE,qKAAC;sBAAI;;;;;;IAET;AACF"}}]
+}

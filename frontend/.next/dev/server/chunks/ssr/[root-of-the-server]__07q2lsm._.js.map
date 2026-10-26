@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 29, "column": 0}, "map": {"version":3,"sources":["file:///D:/5%20WebDev_MERN_Full_Stack_Projects/Linkedin_Replica/frontend/src/config/redux/store.js"],"sourcesContent":["\r\n// STEPS for State Management\r\n// Submit Action \r\n// Handle action in it's reducer\r\n// Register Here -> Reducer\r\n\r\nimport { configureStore } from \"@reduxjs/toolkit\";\r\n\r\nexport const store = configureStore({\r\n    reducer: {}\r\n});"],"names":["store","reducer"],"mappings":";;;;AACA,6BAA6B;AAC7B,iBAAiB;AACjB,gCAAgC;AAChC,2BAA2B;AAE3B;;;;;;AAEO,MAAMA,QAAQ,IAAA,qNAAc,EAAC;IAChCC,SAAS,CAAC;AACd"}},
+    {"offset": {"line": 52, "column": 0}, "map": {"version":3,"sources":["file:///D:/5%20WebDev_MERN_Full_Stack_Projects/Linkedin_Replica/frontend/src/pages/_app.js"],"sourcesContent":["import { store } from \"@/config/redux/store\";\nimport \"@/styles/globals.css\";\nimport { Provider } from \"react-redux\";\n\nexport default function App({ Component, pageProps }) {\n  return <>\n    <Provider store={store}>\n      <Component {...pageProps} />;\n    </Provider>\n  </>\n}\n"],"names":["App","Component","pageProps","store"],"mappings":";;;;;AAAA;AAEA;;;;;;;;;;AAEe,SAASA,IAAI,EAAEC,SAAS,EAAEC,SAAS,EAAE;IAClD,qBAAO;kBACL,cAAA,qKAAC,6LAAQ;YAACC,OAAO,iIAAK;;8BACpB,qKAACF;oBAAW,GAAGC,SAAS;;;;;;gBAAI;;;;;;;;;;;;AAGlC"}}]
+}

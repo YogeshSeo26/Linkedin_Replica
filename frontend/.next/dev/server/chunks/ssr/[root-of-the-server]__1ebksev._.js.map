@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 16, "column": 0}, "map": {"version":3,"sources":["file:///D:/5%20WebDev_MERN_Full_Stack_Projects/Linkedin_Replica/frontend/src/pages/dashboard/index.jsx"],"sourcesContent":["\r\nimport React, { useEffect } from 'react'\r\n\r\nexport default function Dashboard() {\r\n    useEffect(() => {\r\n        if(localStorage.getItem(\"token\") === null) {\r\n            window.location.href = \"./login\";\r\n        };\r\n    });\r\n\r\n    return (\r\n        <div>Dashboard</div>\r\n    )\r\n}\r\n"],"names":["Dashboard","localStorage","getItem","window","location","href"],"mappings":";;;;;AACA;;;AAEe,SAASA;IACpB,IAAA,gHAAS,EAAC;QACN,IAAGC,aAAaC,OAAO,CAAC,aAAa,MAAM;YACvCC,OAAOC,QAAQ,CAACC,IAAI,GAAG;QAC3B;;IACJ;IAEA,qBACI,qKAAC;kBAAI;;;;;;AAEb"}}]
+}

@@ -1,0 +1,139 @@
+
+# User 1 Created
+POST http://localhost:9080/register HTTP/1.1
+content-Type: application/json
+
+{
+    "username": "yogesh26",
+    "password": "mypassword123",
+    "email": "yogesh@example.com",
+    "name": "Yogesh"
+}
+
+###
+
+# User 2 Created
+POST http://localhost:9080/register HTTP/1.1
+content-Type: application/json
+
+{
+    "username": "testuser1",
+    "password": "mypassword123",
+    "email": "testuser1@example.com",
+    "name": "Test"
+}
+
+###
+
+# Login 1
+POST http://localhost:9080/login HTTP/1.1
+content-Type: application/json
+
+{
+    "email": "yogesh@example.com",
+    "password": "mypassword123"
+}
+
+###
+
+# Login 2
+POST http://localhost:9080/login HTTP/1.1
+content-Type: application/json
+
+{
+    "email": "testuser1@example.com",
+    "password": "mypassword123"
+}
+
+###
+
+# Profile 1 
+GET http://localhost:9080/get_user_and_profile HTTP/1.1
+content-Type: application/json
+
+{
+    "token": "c59e40e8cabb66f97f728fb9ec1c9146f0ba6523f218c02dc654be5ef3b91469"
+}
+
+###
+
+# Profile 2 
+GET http://localhost:9080/get_user_and_profile HTTP/1.1
+content-Type: application/json
+
+{
+    "token": "225aec3445bf90facc438c0f84913777ea23cf5ab20a43dbe3d65c6c131873ce"
+}
+
+###
+
+# Profile 1 update
+POST http://localhost:9080/update_profile_data HTTP/1.1
+content-Type: application/json
+
+{
+    "token": "c59e40e8cabb66f97f728fb9ec1c9146f0ba6523f218c02dc654be5ef3b91469",
+    "bio": "Software Developer",
+    "currentPost": "CTO",
+    "pastWork": [
+        {
+            "company": "Microsoft",
+            "position": "CTO",
+            "years": "2+"
+        }
+    ],
+    "education": [
+        {
+            "school": "IIIT",
+            "degree": "B.Tech",
+            "fieldOfStudy": "2015-2019"
+        }
+    ]
+}
+
+###
+
+# Profile 2 update
+POST http://localhost:9080/update_profile_data HTTP/1.1
+content-Type: application/json
+
+{
+    "token": "a5d222c771adb80be8153b445b620d020d53687fb16322ce27879a478aa375bd",
+    "bio": "Hey I am Neha, I am from Delhi, I work XYZ company, I am a true learner of Apna College",
+    "currentPost": "CTO",
+    "pastWork": [
+        {
+            "company": "Microsoft",
+            "position": "CTO",
+            "years": "2+"
+        }
+    ],
+    "education": [
+        {
+            "school": "IIIT",
+            "degree": "B.Tech",
+            "fieldOfStudy": "2015-2019"
+        }
+    ]
+}
+
+###
+
+GET http://localhost:9080/user/get_all_users HTTP/1.1
+content-Type: application/json
+
+###
+
+GET http://localhost:9080/get_posts HTTP/1.1
+
+
+###
+
+GET http://localhost:9080/comment HTTP/1.1
+content-Type: application/json
+
+{
+    "post_id": "",
+    "comment_text": "This",
+    "token": "",
+}
